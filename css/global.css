@@ -37,3 +37,12 @@ h1, h2, h3, h4, p, ul, blockquote, dd {
   bottom: 60px;
   right: 60px;
 }
+
+@media (max-width: 800px) {
+  .wpp {
+    width: 48px;
+    height: 48px;
+    bottom: 32px;
+    right: 32px;
+  }
+}
