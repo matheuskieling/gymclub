@@ -1,0 +1,9 @@
+#planos .planos-bg {
+  box-shadow: 0 -140px var(--cor-11);
+}
+
+.planos > h3 {
+  margin-top: -60px;
+  margin-bottom: 0px;
+}
+

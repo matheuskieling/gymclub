@@ -1,0 +1,41 @@
+.diferenciais-bg {
+  background: var(--cor-12);
+  box-shadow: inset 0 -120px var(--cor-0);
+
+}
+
+.diferenciais-conteudo > h3 {
+  padding-top: 120px;
+}
+
+.diferenciais h2 {
+  position: relative;
+  margin-bottom: 83px;
+}
+
+.diferenciais h2::after {
+  content: "";
+  width: 100px;
+  height: 20px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  display: block;
+  margin-top: 4px;
+}
+
+.diferenciais-itens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 60px;
+}
+
+.diferenciais {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.diferenciais img {
+  display: block;
+  object-fit: cover;
+}
