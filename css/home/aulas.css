@@ -1,0 +1,77 @@
+.aulas-bg {
+  background-color: var(--cor-12);
+  box-shadow: inset 0 -180px var(--cor-0), inset 0 160px var(--cor-0), inset -60px 0 var(--cor-0);
+}
+
+.aulas h2 {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.aulas h2::after {
+  content: "";
+  width: 100px;
+  height: 20px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  display: block;
+  margin-top: 4px;
+}
+
+.aulas-itens {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.aulas-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.aulas-item img {
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.aulas-item h3 {
+  margin-bottom: 12px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.aulas-item h3::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  top: 12px;
+  left: -20px;
+}
+
+.aulas-item p {
+  margin-left: 20px;
+}
+
+
+@media (max-width: 800px) {
+  .aulas-bg {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .aulas-itens {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+  }
+  .aulas h2 {
+    font-size: 2rem;
+  }
+  .aulas-item h3 {
+    font-size: 1.5rem;
+  }
+  .aulas-item p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,114 @@
+.planos-bg {
+  background-color: var(--cor-11);
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.planos h2 {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.planos h2::after {
+  content: "";
+  width: 100px;
+  height: 20px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  display: block;
+  margin-top: 4px;
+}
+
+
+.planos-itens {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.planos-item {
+  background-color: var(--cor-10);
+  padding: 40px;
+  display: block;
+}
+
+.planos-item.anual {
+  background-color: var(--cor-12);
+}
+
+.planos-item > p {
+  margin-bottom: 20px;
+}
+
+.plano-lista li {
+  display: flex;
+  gap: 12px 12px;
+  margin-bottom: 12px;
+}
+
+.plano-nome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.plano-valor {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.plano-nome h3 {
+  text-transform: uppercase;
+}
+
+.planos > * {
+  margin-bottom: 40px;
+}
+
+.planos a {
+  display: block;
+  margin: 0 auto
+}
+
+.anual {
+  border: 2px solid var(--cor-p1);
+  position: relative;
+}
+
+.anual span {
+  color: var(--cor-2);
+}
+
+.anual::before {
+  content: "Recomendado por alunos";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 30px;
+  background-color: var(--cor-p1);
+  top: -25px;
+  left: -2px;
+  border-radius: 4px 4px 0 0;
+  font: 500 1rem/1 "Poppins", sans-serif;
+}
+
+
+@media (max-width: 800px) {
+  .planos-itens {
+    grid-template-columns: 1fr;
+  }
+  .planos-item:first-child {
+    margin-bottom: 20px;
+  }
+  .planos h2 {
+    font-size: 2rem;
+  }
+  .planos-bg {
+    padding-top: 60px;
+  }
+}

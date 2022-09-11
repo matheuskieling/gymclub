@@ -1,0 +1,22 @@
+/* Utilitario */
+
+@import "./utilitario/cores.css";
+@import "./utilitario/tipografia.css";
+@import "./utilitario/componentes.css";
+
+
+/* Header & Footer*/
+
+@import "./header.css";
+@import "./footer.css";
+
+
+/* global */
+
+@import "./global.css";
+
+/* Home */
+@import "./home/introducao.css";
+@import "./home/about.css";
+@import "./home/planos.css";
+@import "./home/aulas.css";
