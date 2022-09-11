@@ -27,3 +27,13 @@ img[src$=".jpg"] {
 h1, h2, h3, h4, p, ul, blockquote, dd {
   margin: 0px;
 }
+
+.wpp {
+  display: block;
+  position: fixed;
+  background: url(../img/icons/wpp.svg) no-repeat;
+  width: 64px;
+  height: 64px;
+  bottom: 60px;
+  right: 60px;
+}
