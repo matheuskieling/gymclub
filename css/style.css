@@ -20,3 +20,8 @@
 @import "./home/about.css";
 @import "./home/planos.css";
 @import "./home/aulas.css";
+
+
+/* Planos */
+@import "./planos/planos.css";
+@import "./planos/diferenciais.css";
